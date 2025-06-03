@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+background-color: #676764;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+form{
+ background-color: #3b3b38;
+ padding: 50px;
+ width: 450px;
+ text-align: center;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ border-radius: 10px;
+}
+
+form h2{
+    font-size: 40px;
+    color:  #1E1E1E;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.input.container{
+    position: relative;
+}
+
+.input-container > i{
+    /*Esta parte agrega el circulo a los iconos*/ 
+    padding: 14px;
+    border-radius: 50%;
+    background: linear-gradient(
+        90deg,rgba(153,26,123,1)0%,
+        rgba(117,30,156,1)50%
+ );
+ /*Esta parte modificara el icono*/
+color:white;
+position: absolute;
+font-size: 20px;
+top: 4px;
+left:10px;  
+}
+/*Este bloque modifica la forma de los input*/
+.input-container > input {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #1E1E1E;
+    font-size: 16px;
+    outline: none;
+    color: #676764; 
+}
+/*Este bloque modifica el color de texto dentro de placerholder*/
+::placeholder{
+    color: black;
+    font-size: 20px;
+}
+/* este bloque modifica el texto de "terminos y condiciones"*/
+form a{
+    display: block;
+    color: grey;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.boton{
+    background: linear-gradient(
+        90deg,rgba(153,26,123,1)0%,
+        rgba(117,30,156,1)50%
+ );
+    padding: 15px 80px;
+    border: 0;
+    box-shadow: 0 0 20px rgb(213, 213, 204);
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.succes{
+    position: absolute;
+    top: 50px;
+    color: #00A735;
+    font-size: 18px;
+}
+.error{
+    position: absolute;
+    top: 50px;
+    color: #3b3b38;
+    font-size: 18px;
+}
+
